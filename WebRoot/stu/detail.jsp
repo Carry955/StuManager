@@ -45,7 +45,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				</select>
 			</div>
 			<div>
-				<span>入学年份</span><s:textfield type="date" format='yyyy-MM-dd' name="stu.enteryear" value="%{enteryear}"/>
+				<span>入学年份</span>
+				<input type="date" name="stu.enteryear" value='<s:date name="enteryear" format="yyyy-MM-dd"/>'/>
 			</div>
 			<div>
 				<span>户籍地</span><s:textfield name="stu.nativeplace" value="%{nativeplace}"/>
