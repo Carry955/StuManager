@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN" "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<constant name="struts.enable.DynamicMethodInvocation" value="true" />
+	<constant name="devMode" value="false"/>
+   	<package name="user" extends="struts-default" namespace="/user">
+		<action name="register" class="com.carry.action.UserAction" method="register">
+			<result name="success">login.jsp</result>
+			<result name="input">register.jsp</result>
+		</action>
+		<action name="login" class="com.carry.action.UserAction" method="login">
+			<result name="success" type="chain">
+				<param name="actionName">stuList</param>
+				<param name="namespace">/stu</param>
+				<param name="method">stuList</param>
+			</result>
+			<result name="input">login.jsp</result>
+			<result name="fail">login.jsp</result>
+		</action>
+	</package>
+	<package name="stu" extends="struts-default" namespace="/stu">
+		<global-results>
+			<result name="fail">../user/login.jsp</result>
+		</global-results>
+   		<action name="stuList" class="com.carry.action.StuAction" method="stuList">
+   			<result name="success">../stu/stuList.jsp</result>
+   		</action>
+   		<action name="delStu" class="com.carry.action.StuAction" method="delStu">
+   			<result name="success" type="chain">stuList</result>
+   		</action>
+   		<action name="modifyStu" class="com.carry.action.StuAction" method="modifyStu">
+   			<result name="success">detail.jsp</result>
+   		</action>
+   		<action	name="updateStu" class="com.carry.action.StuAction" method="updateStu">
+   			<result name="success" type="chain">stuList</result>
+   			<result name="input">detail.jsp</result>
+   		</action>
+   		<action name="addStu" class="com.carry.action.StuAction" method="addStu">
+			<result name="success" type="chain">stuList</result>
+			<result name="input">addStu.jsp</result>
+		</action>
+	</package>
+</struts>
