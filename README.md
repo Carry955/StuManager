@@ -2,10 +2,10 @@
 
 -----
 ### 开发环境
-Struts 2.5.22
-Hibernate 5.4.11
-JavaSE 1.8
-mysql-connector 8.0.9
+* Struts 2.5.22
+* Hibernate 5.4.11
+* JavaSE 1.8
+* mysql-connector 8.0.9
 
 -----
 ### 界面图
