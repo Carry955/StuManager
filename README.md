@@ -6,6 +6,7 @@
 * Hibernate 5.4.11
 * JavaSE 1.8
 * mysql-connector 8.0.9
+* mysql 5.5.47
 
 -----
 ### 界面图
