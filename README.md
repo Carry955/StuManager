@@ -28,7 +28,7 @@
 -----
 ### 数据库设计
 ##### 管理员表
-<img src="https://github.com/Carry955/StuManager/blob/master/img/sql-admin.png" width="100%">
+<img src="https://github.com/Carry955/StuManager/blob/master/img/sql-admin.png" width="66%">
 
 ##### 学生表
-<img src="https://github.com/Carry955/StuManager/blob/master/img/sql-stu.png" width="100%">
+<img src="https://github.com/Carry955/StuManager/blob/master/img/sql-stu.png" width="66%">
