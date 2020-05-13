@@ -11,5 +11,4 @@ public class SessionUtil {
 		Session session = sessionFactory.openSession();
 		return session;
 	}
-
 }

@@ -2,7 +2,6 @@ package com.carry.dao.impl;
 
 import org.hibernate.Session;
 import org.hibernate.Transaction;
-
 import com.carry.dao.AdminDao;
 import com.carry.pojo.Admin;
 import com.carry.tools.SessionUtil;
@@ -26,5 +25,4 @@ public class AdminImpl implements AdminDao {
 		return admininfo;
 
 	}
-
 }

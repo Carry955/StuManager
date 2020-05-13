@@ -39,9 +39,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 							female="selected";
 						}
 					%>
-					<option value="男" <%=male %> >男</option>
+					<option value="男" <%=male %>>男</option>
 					<option value="女" <%=female %>>女</option>
-					
 				</select>
 			</div>
 			<div>

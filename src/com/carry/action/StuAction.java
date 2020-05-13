@@ -1,17 +1,10 @@
 package com.carry.action;
 
 import java.util.List;
-
 import javax.servlet.http.HttpServletRequest;
-
 import org.apache.struts2.ServletActionContext;
-import org.hibernate.Session;
-import org.hibernate.Transaction;
-import org.hibernate.query.Query;
-
 import com.carry.dao.impl.StuImpl;
 import com.carry.pojo.Stu;
-import com.carry.tools.SessionUtil;
 import com.opensymphony.xwork2.ActionSupport;
 
 public class StuAction extends ActionSupport{
@@ -60,6 +53,7 @@ public class StuAction extends ActionSupport{
 			this.addFieldError("stu.major", "专业不能为空！");
 		}
 	}
+	
 	public String stuList() {
 //		if(checkLogin()) {
 			List<Stu> stus = new StuImpl().stuList();
@@ -70,7 +64,6 @@ public class StuAction extends ActionSupport{
 //			return "fail";
 //		}
 	}
-	
 	public String addStu() {
 //		if(checkLogin()) {
 			new StuImpl().addStu(stu);
@@ -105,6 +98,7 @@ public class StuAction extends ActionSupport{
 //			return "fail";
 //		}
 	}
+	
 	public Stu getStu() {
 		return stu;
 	}

@@ -3,8 +3,7 @@
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping package="com.carry.pojo">
 	<class name="Stu" table="stuinfo">
-		<id name="id" column="id">
-		</id>
+		<id name="id" column="id"></id>
 		<property name="name" column="name"></property>
 		<property name="gender" column="gender"></property>
 		<property name="enteryear" column="enteryear"></property>

@@ -1,12 +1,8 @@
 package com.carry.action;
 
 import org.apache.struts2.ServletActionContext;
-import org.hibernate.Session;
-import org.hibernate.Transaction;
-
 import com.carry.dao.impl.AdminImpl;
 import com.carry.pojo.Admin;
-import com.carry.tools.SessionUtil;
 import com.opensymphony.xwork2.ActionSupport;
 
 public class UserAction extends ActionSupport{
